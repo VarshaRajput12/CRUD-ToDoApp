@@ -1,0 +1,70 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: sans-serif;
+  background: hsl(0, 0%, 90%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainContainer{
+  width: 300px;
+  height: 500px;
+  border: 5px solid hsl(107, 31%, 72%);
+  border-radius: 8px;
+  padding: 15px;
+  background: #fff;
+  overflow-y: scroll;
+  
+}
+
+.mainContainer::-webkit-scrollbar{
+  width: 0;
+}
+
+#addNew{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: rgba(171, 206, 161, 0.35);
+  cursor: pointer;
+}
+
+.fa-plus{
+  background: #abcea1;
+  padding: 3px;
+  border-radius: 3px;
+}
+#tasks{
+  display: grid;
+  gap:20px
+}
+
+#tasks div{
+  background: #e2eede;
+  border: 3px solid #abcea1;
+  padding: 5px;
+  border-radius: 6px;
+  display: grid;
+  gap: 8px;
+}
+
+.options{
+  justify-self: center;
+  display: flex;
+  gap: 20px;
+}
+.options i{
+  cursor: pointer;
+}
+
+#msg{
+  color: red;
+}
